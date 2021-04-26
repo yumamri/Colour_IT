@@ -1,14 +1,158 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Exercise. Bootstrap continued</title>
-    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>ColourIT</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
+<header>
+	<nav>
+		<ul id="menu">
+			<li id="logo"><a href="index.html"><span id="colour">COLOUR</span><span id="it">IT</span></a></li>
+			<li><a href="index.html" class="menu" id="active">HOME</a></li>
+			<li><a href="about.html" class="menu">ABOUT</a></li>
+			<li><a href="project.html" class="menu">PROJECT</a></li>
+			<li><a href="contact.html" class="menu">CONTACT</a></li>
+		</ul>
+	</nav>
+	<div id="slider">
+		<section class="slider">
+			<ol class="slider_viewport">
+				<li id="slider_slide1"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide4"class="slider_prev">Go to last slide</a>
+						<a href="#slider_slide2"class="slider_next">Go to next slide</a>
+					</div>
+				</li>
+				<li id="slider_slide2"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide1"class="slider_prev">Go to previous slide</a>
+						<a href="#slider_slide3"class="slider_next">Go to next slide</a>
+					</div>
+				</li>
+				<li id="slider_slide3"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide2"class="slider_prev">Go to previous slide</a>
+						<a href="#slider_slide4"class="slider_next">Go to next slide</a>
+					</div>
+				</li>
+				<li id="slider_slide4"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide3"class="slider_prev">Go to previous slide</a>
+						<a href="#slider_slide1"class="slider_next">Go to first slide</a>
+					</div>
+				</li>
+			</ol>
+			<aside class="slider_navigation">
+				<ol class="slider_navigation-list">
+					<li class="slider_navigation-item"><a href="#slider_slide1"class="slider_navigation-button">Go to slide 1</a></li>
+					<li class="slider_navigation-item"><a href="#slider_slide2"class="slider_navigation-button">Go to slide 2</a></li>
+					<li class="slider_navigation-item"><a href="#slider_slide3"class="slider_navigation-button">Go to slide 3</a></li>
+					<li class="slider_navigation-item"><a href="#slider_slide4"class="slider_navigation-button">Go to slide 4</a></li>
+				</ol>
+			</aside>
+		</section>
+	</div>
+</header>
+
 <body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<section>
+	<div id="main_presentation" class="bg">
+		<p class="title">Why you should care about your website design ?</p>
+		<iframe id="main_video" src="https://www.youtube.com/embed/F4fbwKV9dBU"></iframe>
+	</div>
+	<div id="services_main" class="bg">
+		<div>
+			<p class="title">Everything you need to get creative projects done</p>
+			<p class="content">Bring your ideas to life with professional digital assets, resources and services</p>
+			<span class="links"><a href="###">Find the right product for you<img class="arrow_image" src="pictures/arrow.png" alt="arrow"></a></span>
+		</div>
+		<img id="content_picutre" src="pictures/contentpicture.svg" alt="content_picture">
+	</div>
+	<div id="main_projects" class="bg">
+		<p class="title">Last Projects</p>
+		<p class="content"></p>
+		<ul id="main_projects_picture">
+			<li><img src="pictures/main_project_1.gif" alt="project1"></li>
+			<li><img class="main_project_pic" src="pictures/main_project_2.gif" alt="project2"></li>
+		</ul>
+		<span class="links" id="see_all_project"><a href="###">See all projects<img class="arrow_image" src="pictures/arrow.png" alt="arrow"></a></span>
+	</div>
+	<div id="main_about_us" class="bg">
+		<div id="main_about_us_text">
+			<p class="title">About us</p>
+			<p class="content">We’re a team that knows creativity doesn’t just happen, it takes passion and a lot of hard work. That’s why we’re committed to making it easier for people to get their creative projects done, driven by a positive purpose and a shared set of values that puts our community at the heart of everything we do.</p>
+			<span class="links"><a href="###">Read more about us<img class="arrow_image" src="pictures/arrow.png" alt="arrow"></a></span>
+		</div>
+		<div class="zoom" id="main_team_images">
+			<img id="main_team_1" src="pictures/team1.jpg" alt="team1">
+			<img id="main_team_2" src="pictures/team2.jpg" alt="team2"><br>
+			<img id="main_team_3" src="pictures/team3.jpg" alt="team3">
+			<img id="main_team_4" src="pictures/team4.jpg" alt="team4">
+		</div>
+	</div>
+	<div id="map_container" class="bg">
+		<div>
+			<p class="title">Where and when to find us</p>
+			<iframe id="map_main" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Chr%20M%20%C3%98stergaards%20Vej%204,%208700%20Horsens,%20Danemark+(via)&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+		</div>
+		<div>
+			<table id="time_table_main">
+				<thead>
+				<tr><th>Monday :</th><td>9h - 18h</td></tr>
+				<tr><th>Tuesday :</th><td>9h - 18h</td></tr>
+				<tr><th>Wednesday :</th><td>9h - 18h</td></tr>
+				<tr><th>Thursday :</th><td>9h - 18h</td></tr>
+				<tr><th>Friday :</th><td>9h - 18h</td></tr>
+				<tr><th>Saturday :</th><td>8h - 12h</td></tr>
+				<th>Sunday :</th><td>close</td>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
 </body>
-</html>
+<hr id="line">
+<footer>
+	<div id="footer" >
+		<div class="nav_footer">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Project</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="nav_footer">
+			<ul>
+				<li><a href="#">About</a></li>
+				<li class="indentation_footer"><a href="#">Services</a></li>
+				<li class="indentation_footer"><a href="#">Team</a></li>
+			</ul>
+		</div>
+		<div id="op_time_footer">
+			<ul>
+				<li class="day_footer"><p>Week:</p><p> 9h - 18h</p></li>
+				<li class="day_footer"><p>Saturday:</p><p> 8h - 12h</p></li>
+			</ul>
+		</div>
+		<div>
+			<ul id="social_media_footer" class="zoom">
+				<li><a href="https://www.facebook.com"><img src="pictures/facebook.png" alt="facbook"></a></li>
+				<li><a href="https://www.twitter.com"><img src="pictures/twitter.png" alt="twitter"></a></li>
+				<li><a href="https://www.instagram.com"><img src="pictures/instagram.png" alt="instagram"></a></li>
+				<li><a href="https://www.youtube.com"><img src="pictures/youtube.png" alt="youtube"></a></li>
+				<li><a href="https://www.linkedin.com"><img src="pictures/linkedin.png" alt="linkedin"></a></li>
+			</ul>
+		</div>
+		<div>
+			<ul id="contact_footer" class="zoom">
+				<li><a href="tel: +45 49-11-11-11" class="footer_contact_info"><img src="pictures/phone.png" alt="phone"><span class="up_text_footer">+45 49-11-11-11</span></a></li>
+				<li><a href="mailto: contact@colouorit.com" class="footer_contact_info"><img src="pictures/mail.png" alt="mail"><span class="up_text_footer">contact@colouorit.com</span></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>

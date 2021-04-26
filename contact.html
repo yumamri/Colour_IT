@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ColourIT</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<header>
+	<nav>
+		<ul id="menu">
+			<li id="logo"><a href="index.html"><span id="colour">COLOUR</span><span id="it">IT</span></a></li>
+
+			<li><a href="index.html" class="menu" id="active">HOME</a></li>
+
+			<li><a href="about.html" class="menu">ABOUT</a></li>
+
+			<li><a href="project.html" class="menu">PROJECT</a></li>
+
+			<li><a href="contact.html" class="menu">CONTACT</a></li>
+		</ul>
+	</nav>
+
+	<div id="slider">
+		<section class="slider">
+			<ol class="slider_viewport">
+
+				<li id="slider_slide1"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide4"class="slider_prev">Go to last slide</a>
+						<a href="#slider_slide2"class="slider_next">Go to next slide</a>
+					</div>
+				</li>
+
+				<li id="slider_slide2"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide1"class="slider_prev">Go to previous slide</a>
+						<a href="#slider_slide3"class="slider_next">Go to next slide</a>
+					</div>
+				</li>
+
+				<li id="slider_slide3"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide2"class="slider_prev">Go to previous slide</a>
+						<a href="#slider_slide4"class="slider_next">Go to next slide</a>
+					</div>
+				</li>
+
+				<li id="slider_slide4"tabindex="0"class="slider_slide">
+					<div class="slider_snapper">
+						<a href="#slider_slide3"class="slider_prev">Go to previous slide</a>
+						<a href="#slider_slide1"class="slider_next">Go to first slide</a>
+					</div>
+				</li>
+
+			</ol>
+			<aside class="slider_navigation">
+				<ol class="slider_navigation-list">
+					<li class="slider_navigation-item"><a href="#slider_slide1"class="slider_navigation-button">Go to slide 1</a></li>
+					<li class="slider_navigation-item"><a href="#slider_slide2"class="slider_navigation-button">Go to slide 2</a></li>
+					<li class="slider_navigation-item"><a href="#slider_slide3"class="slider_navigation-button">Go to slide 3</a></li>
+					<li class="slider_navigation-item"><a href="#slider_slide4"class="slider_navigation-button">Go to slide 4</a></li>
+				</ol>
+			</aside>
+		
+		</section>
+	</div>
+</header>
+
+<body>
+	<div class="container">
+		<form>
+	  
+		  <label for="fname">First Name</label>
+		  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	  
+		  <label for="lname">Last Name</label>
+		  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	  
+		  <label for="Content">Content</label>
+		  <textarea id="Content" name="Content" placeholder="Write something.." style="height:200px"></textarea>
+	  
+		  <input type="submit" value="Submit">
+	  
+		</form>
+	  </div>
+</body>
+<hr id="line">
+<footer>
+	<div id="footer" >
+			<div class="nav_footer">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Project</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="nav_footer">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li class="indentation_footer"><a href="#">Services</a></li>
+					<li class="indentation_footer"><a href="#">Team</a></li>
+				</ul>
+			</div>
+		<div id="op_time_footer">
+			<ul>
+				<li class="day_footer"><p>Week:</p><p> 9h - 18h</p></li>
+				<li class="day_footer"><p>Saturday:</p><p> 8h - 12h</p></li>
+			</ul>
+		</div>
+		<div>
+			<ul id="social_media_footer" class="zoom">
+				<li><a href="https://www.facebook.com"><img src="pictures/facebook.png" alt="facbook"></a></li>
+				<li><a href="https://www.twitter.com"><img src="pictures/twitter.png" alt="twitter"></a></li>
+				<li><a href="https://www.instagram.com"><img src="pictures/instagram.png" alt="instagram"></a></li>
+				<li><a href="https://www.youtube.com"><img src="pictures/youtube.png" alt="youtube"></a></li>
+				<li><a href="https://www.linkedin.com"><img src="pictures/linkedin.png" alt="linkedin"></a></li>
+			</ul>
+		</div>
+		<div>
+			<ul id="contact_footer" class="zoom">
+				<li><a href="tel: +45 49-11-11-11" class="footer_contact_info"><img src="pictures/phone.png" alt="phone"><span class="up_text_footer">+45 49-11-11-11</span></a></li>
+				<li><a href="mailto: contact@colouorit.com" class="footer_contact_info"><img src="pictures/mail.png" alt="mail"><span class="up_text_footer">contact@colouorit.com</span></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>

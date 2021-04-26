@@ -1,0 +1,405 @@
+/*###################
+-------HEADER--------
+###################*/
+header{
+    margin: 0;
+    padding: 0.5% 0.5% 5em;
+    background: #2B2D42;
+}
+
+header a{
+    padding-top: 10%;
+    text-decoration:none;
+    color: #8D99AE;
+}
+
+header nav ul{
+    margin:0;
+    padding:0;
+}
+/*----UNDERLINE----*/
+.menu a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #FFFFFF;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.menu a:hover:after {
+    width: 100%;
+    left: 0;
+}
+/*----LOGO----*/
+#logo{
+    width: max-content;
+}
+
+#logo a{
+    display:inline-block;
+    font-size: 3em;
+}
+
+#colour{
+    background-color: #EF233C;
+    margin: 0;
+    padding: 4%;
+    color: #FFFFFF;
+    border-radius: 20px 0 0 20px;
+}
+
+#it{
+    padding: 2.1%;
+    border: .07em solid #EF233C;
+    color: #EF233C;
+    border-radius: 0 20px 20px 0;
+}
+
+/*----MENU----*/
+#active{
+    color: #FFFFFF;  /*a:active doesn't work*/
+}
+
+.menu {
+    text-align: center;
+}
+.menu a{
+    display:inline-block;
+    font-size: 1.5em;
+}
+
+.menu a:hover{
+    color: #D90429;
+}
+
+.menu li{
+    position: relative;
+    display:inline-block;
+    margin: 0 7%;
+}
+
+/*###################
+-------BODY--------
+###################*/
+body{
+    margin: auto;
+    padding: 0;
+    background-color: #8D99AE;
+}
+
+#mini_menu {
+    text-align: center;
+}
+
+ul#mini_menu li {
+    display: inline-block;
+}
+/*----TEAM GALLERY----*/
+* {
+    box-sizing: border-box;
+}
+
+.row_team {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column_team {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 1%;
+}
+.team_image {
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #EF233C;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+figcaption {
+    text-align: center;
+    color: #0D0628;
+}
+/*----TAB SWITCH----*/
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+.tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: #c6041a;
+}
+.tabs::before,
+.tabs::after {
+    content: "";
+    display: table;
+}
+.tabs::after {
+    clear: both;
+}
+.tab {
+    float: left;
+    font-size: 150%;
+}
+.tab_switch {
+    display: none;
+}
+.tab_label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #EF233C;
+    border-right: 0.125rem solid #b51d30;
+    color: white;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+}
+.tab_label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+}
+.tab_content {
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fff;
+    color: #2B2D42;
+    transition: all 0.35s;
+    width: 100%;
+    opacity: 0;
+}
+.tab_switch:checked + .tab_label {
+    background: #FFFFFF;
+    color: #2B2D42;
+    border-bottom: 0;
+    border-right: 0.125rem solid #b51d30;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+}
+.tab_switch:checked + label + .tab_content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+    visibility: visible;
+}
+.tab_content{
+    visibility: hidden;
+}
+/*###################
+-----FOOTER------
+###################*/
+footer{
+    background: #EDF2F4;
+    text-align: center;
+    color: #2B2D42;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer ul{
+    position: relative;
+    display:inline-block;
+    list-style: none;
+}
+
+/*----SOCIAL MEDIA----*/
+#social_media_footer a{
+    max-width: 20%;
+}
+
+#social_media_footer a{
+    display:flex;
+    align-items:center;
+}
+
+#social_media_footer li{
+    position: relative;
+    display:inline-block;
+    width: 19%;
+    min-width: 12%;
+}
+
+/*----CONTACT----*/
+#contact_footer a{
+    display:flex;
+    align-items:center;
+}
+
+#contact_footer img{
+    width:20%;
+}
+
+.footer_contact_info{
+    font-size: 120%;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+/*----NAV----*/
+.nav_footer a{
+    text-decoration: none;
+    color : #0D0628;
+    font-size: 130%;
+}
+
+.nav_footer a:hover{
+    color : #DA627D;
+}
+
+.indentation_footer{
+    padding-left: 10px;
+}
+
+/*###################
+-----SCREEN------
+###################*/
+
+@media screen and (max-width: 1750px) {
+    .column_gif {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .static {
+        display: none;
+    }
+    .active {
+        width: 100%;
+    }
+    .column_team {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:1209px) and (max-width:1429px){
+    .menu li{
+        margin: 0 3%;
+    }
+
+}
+
+@media screen and (max-width:1208px) and (min-width:725px){
+    .menu li{
+        margin: 0 3%;
+    }
+
+    #op_time_footer li{
+        font-size: 90%;
+    }
+    .nav_footer{
+        font-size: 80%;
+    }
+    .footer_contact_info{
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width:724px){
+    .menu li{
+        margin: 0 3%;
+    }
+
+    #line{
+        margin-top: 100px;
+        visibility: visible;
+        width: 300px;
+    }
+
+    #footer{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .indentation_footer{
+        padding: 0;
+    }
+}
+
+/*###################
+-----ANIMATION------
+###################*/
+
+/*----Animated Gif----*/
+.row_gif {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column_gif {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 1%;
+}
+.static:hover {
+    opacity:0;
+}
+.static {
+    position:absolute;
+}
+.static, .active {
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #EF233C;
+    height: 20em;
+}
+
+.column_gif p {
+    font-size: 80%;
+    color: #8D99AE;
+    text-align: justify;
+}
+/*----Zoom----*/
+.zoom a:hover{
+    transition: .3s ease-in-out;
+    transform: scale(1.3);
+}
+/*----Arrow----*/
+.arrow_image{
+    max-width: 64px;
+    max-height: 16px;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+@keyframes arrow1 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10px, 0);
+    }
+}
+
+/*###################
+-----FONT------
+###################*/
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald/Oswald.ttf');
+}
+*{
+    font-family: "Oswald", serif;
+}
