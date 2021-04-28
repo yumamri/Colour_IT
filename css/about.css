@@ -1,29 +1,29 @@
 /*###################
 -------HEADER--------
 ###################*/
-header{
+header {
     margin: 0;
     padding: 0.5% 0.5% 0.5%;
     background: #2B2D42;
 }
 
-header a{
+header a {
     padding-top: 10%;
     text-decoration:none;
     color: #8D99AE;
 }
 
 /*----LOGO----*/
-#logo{
+#logo {
     width: max-content;
 }
 
-#logo a{
+#logo a {
     display:inline-block;
-    font-size: 3em;
+    font-size: 150%;
 }
 
-#colour{
+#colour {
     background-color: #EF233C;
     margin: 0;
     padding: 4%;
@@ -31,7 +31,7 @@ header a{
     border-radius: 20px 0 0 20px;
 }
 
-#it{
+#it {
     padding: 2.1%;
     border: .07em solid #EF233C;
     color: #EF233C;
@@ -41,7 +41,7 @@ header a{
 /*###################
 -------BODY--------
 ###################*/
-body{
+body {
     background-color: #2B2D42;
 }
 
@@ -52,6 +52,10 @@ figcaption {
 
 .col {
     text-align: center;
+}
+
+.nav-item {
+    font-size: 130%;
 }
 /*###################
 -----FOOTER------
@@ -88,7 +92,7 @@ footer {
     src: url('../font/Oswald/Oswald.ttf');
 }
 
-*{
+* {
     font-family: "Oswald", serif;
 }
 
@@ -97,9 +101,6 @@ footer {
 ###################*/
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-    .active {
-        width: 300px;
-    }
     .team {
         width: 300px;
     }
@@ -107,45 +108,48 @@ footer {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .active {
-        width: 500px;
-    }
     .team {
         width: 500px;
+    }
+    .product {
+        width: 500px;
+        object-fit: cover;
     }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .active {
-        width: 700px;
-    }
     .team {
         width: 700px;
+    }
+    .product {
+        width: 700px;
+        object-fit: cover;
     }
 }
 
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .active {
-        width: 1000px;
-    }
     .team {
-        width: 1000px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .product {
+        width: 400px;
+        object-fit: cover;
     }
 }
 
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-    .active {
-        width: 1000px;
-    }
-    .prod {
-        font-size: 1em;
-    }
     .team {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .product {
+        width: 500px;
         object-fit: cover;
     }
 }
