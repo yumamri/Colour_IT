@@ -42,9 +42,7 @@ header a{
 -------BODY--------
 ###################*/
 body{
-    margin: auto;
-    padding: 0;
-    background-color: #8D99AE;
+    background-color: #2B2D42;
 }
 
 figcaption {
@@ -52,70 +50,16 @@ figcaption {
     color: #0D0628;
 }
 
+.col {
+    text-align: center;
+}
 /*###################
 -----FOOTER------
 ###################*/
-footer{
+footer {
     background: #EDF2F4;
     text-align: center;
     color: #2B2D42;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-footer ul{
-    position: relative;
-    display:inline-block;
-    list-style: none;
-}
-
-/*----SOCIAL MEDIA----*/
-#social_media_footer a{
-    max-width: 20%;
-}
-
-#social_media_footer a{
-    display:flex;
-    align-items:center;
-}
-
-#social_media_footer li{
-    position: relative;
-    display:inline-block;
-    width: 19%;
-    min-width: 12%;
-}
-
-/*----CONTACT----*/
-#contact_footer a{
-    display:flex;
-    align-items:center;
-}
-
-#contact_footer img{
-    width:20%;
-}
-
-.footer_contact_info{
-    font-size: 120%;
-    text-decoration: none;
-    color: var(--grey);
-}
-
-/*----NAV----*/
-.nav_footer a{
-    text-decoration: none;
-    color : #0D0628;
-    font-size: 130%;
-}
-
-.nav_footer a:hover{
-    color : #DA627D;
-}
-
-.indentation_footer{
-    padding-left: 10px;
 }
 
 /*###################
@@ -123,29 +67,18 @@ footer ul{
 ###################*/
 
 /*----Zoom----*/
-.zoom a:hover{
-    transition: .3s ease-in-out;
-    transform: scale(1.3);
-}
-/*----Arrow----*/
-.arrow_image{
-    max-width: 64px;
-    max-height: 16px;
-    margin-left: 10px;
-    position: relative;
-    top: 2px;
+.text-decoration {
+    text-decoration: none;
+    color: #2B2D42;
 }
 
-@keyframes arrow1 {
-    0%,
-    100% {
-        transform: translate(0, 0);
-    }
-
-    50% {
-        transform: translate(10px, 0);
-    }
+.zoom img {
+    transition: all .2s ease-in-out;
 }
+.zoom img:hover {
+    transform: scale(1.5);
+}
+
 
 /*###################
 -----FONT------
@@ -154,6 +87,65 @@ footer ul{
     font-family: 'Oswald';
     src: url('../font/Oswald/Oswald.ttf');
 }
+
 *{
     font-family: "Oswald", serif;
+}
+
+/*###################
+-----MEDIA BREAKPOINTS------
+###################*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .active {
+        width: 300px;
+    }
+    .team {
+        width: 300px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .active {
+        width: 500px;
+    }
+    .team {
+        width: 500px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .active {
+        width: 700px;
+    }
+    .team {
+        width: 700px;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .active {
+        width: 1000px;
+    }
+    .team {
+        width: 1000px;
+    }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .active {
+        width: 1000px;
+    }
+    .prod {
+        font-size: 1em;
+    }
+    .team {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
 }
