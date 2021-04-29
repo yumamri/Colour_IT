@@ -96,7 +96,7 @@ article{
 	padding-left: 15px;
 }
 
-#content_picutre{
+#content_picture{
 	width: 40%;
 }
 
@@ -492,7 +492,7 @@ footer ul{
 	}
 
 	#main_video{
-		width: 42.5%;
+		width: 100%;
 		height: 80%;
 	}
 	
@@ -506,7 +506,33 @@ footer ul{
 		margin-top: 5em;
 	}
 
-	
+	.title{
+		font-size: 170%;
+	}
+
+	.title_mobile{
+		padding-left: 80px;
+	}
+
+	.links{
+		font-size: 90%;
+	}
+
+	#content_picture{
+		visibility: hidden;
+	}
+
+	#services_main{
+		width: 40em;
+		padding-left: 50px;
+	}
+
+	#main_about_us{
+		width: 60em;
+		padding-left: 20px;
+	}
+
+
 }
 
 /*###################
