@@ -3,9 +3,8 @@
 ###################*/
 header{
 	margin: 0;
-	padding: 0.5%;
+	padding: 0;
 	padding-bottom: 5em;
-	background: #2B2D42;
 }
 
 header a{
@@ -38,6 +37,17 @@ header nav ul{
 	border: .07em solid #EF233C;
 	color: #EF233C;
 	border-radius: 0 20px 20px 0;
+}
+.carousel{
+	height: 45em;
+}
+
+.overlay-image{
+	height: 40em;
+}
+
+.carousel-inner{
+	height: 40em;
 }
 
 /*----MENU----*/
@@ -269,6 +279,28 @@ input[type=text], textarea {
 	width: 75%;
 	position: center;
 	margin: auto;
+  }
+
+  .carousel-item {
+	height: 1300px;
+  }
+
+  .overlay-image{
+	position: absolute;
+	bottom:0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.9;
+  }
+
+  .item img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-height: 1300px;
   }
 
 /*###################
