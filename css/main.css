@@ -78,6 +78,9 @@ body{
 	padding: 0;
 	background-color: #8D99AE;
 }
+ul {
+	list-style: none;
+}
 
 article{
 	margin: auto;
